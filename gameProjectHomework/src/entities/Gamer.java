@@ -1,26 +1,25 @@
-package Entities;
+package entities;
 
+import abstracts.Entity;
 
-import Abstracts.Entity;
-
-public class Customer implements Entity {
+public class Gamer implements Entity {
+	
 	private int id;
 	private String firstName;
 	private String lastName;
-	private int dateOfBirth;
+	private int birtOfDay;
 	private String nationalityId;
 	
-	public Customer() {
+	public Gamer() {
 		
 	}
 	
-	public Customer(int id, String firstName, String lastName, int dateOfBirth, String nationalityId) {
-		
+	public Gamer(int id, String firstName, String lastName, int birtOfDay, String nationalityId) {
 		super();
 		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
-		this.dateOfBirth = dateOfBirth;
+		this.birtOfDay = birtOfDay;
 		this.nationalityId = nationalityId;
 	}
 
@@ -48,12 +47,12 @@ public class Customer implements Entity {
 		this.lastName = lastName;
 	}
 
-	public int getDateOfBirth() {
-		return dateOfBirth;
+	public int getBirtOfDay() {
+		return birtOfDay;
 	}
 
-	public void setDateOfBirth(int dateOfBirth) {
-		this.dateOfBirth = dateOfBirth;
+	public void setBirtOfDay(int birtOfDay) {
+		this.birtOfDay = birtOfDay;
 	}
 
 	public String getNationalityId() {
@@ -63,4 +62,8 @@ public class Customer implements Entity {
 	public void setNationalityId(String nationalityId) {
 		this.nationalityId = nationalityId;
 	}
+
+	
+
+	
 }
