@@ -1,6 +1,6 @@
 package Concrete;
 
-import Abstract.BaseCustomerManager;
+import Abstracts.BaseCustomerManager;
 
 
 
